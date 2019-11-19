@@ -1,0 +1,157 @@
+$base-color: #156f99;
+$grey: #8a8a8a;
+
+@mixin font($color, $size) {
+  color: $color;
+  font-size: $size;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 65vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 15px;
+  @include font($grey, 1em);
+  
+  h1 {
+    @include font($base-color, 4em);
+  }
+  
+  .contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 0 0 40%;
+    align-items: center;
+    
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+    
+    a:visited {
+      color: #333;
+      text-decoration: none;
+    }
+    
+    .fab {
+      font-size: 150%;
+    }
+  }
+  
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  // border-bottom: 1px solid #e3e3e3;
+  padding: 15px;
+  font: normal 0.9em/1.4em helvetica;
+
+  
+  :last-child .section-details {
+    border-bottom: none;
+  }
+  
+  .profile, .skills, .work, .education {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #e3e3e3;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  
+  .skills-list {
+    column-count: 3;
+    column-fill: balance-all;
+    margin: 0;
+    padding: 0 15px;
+  }
+  
+  .section-title {
+    width: 15vw;
+    @include font($base-color, 1em);
+    font-weight: bold;
+    border-right: 1px solid #e3e3e3;
+    flex-basis: 20vw;
+    padding: 15px 0;
+    text-transform: uppercase;
+  }
+  
+  .section-details {
+    padding: 15px;
+    // border-bottom: 1px solid #e3e3e3;
+    flex-basis: 80vw;  
+  }
+  
+  // work sections
+  .work-card {
+    
+    .work-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 85%;
+      
+      div { /* .position, .name, .year  */
+        display: flex;
+        flex: 1 1 33%;
+      }
+      
+      .name {
+        justify-content: center;
+      }
+      
+      :last-child {
+        justify-content: flex-end;
+      }
+    }
+    
+    .work-description {
+      padding: 15px 0 50px;
+
+    }
+
+    &:last-child .work-description {
+      padding: 15px 0;
+    }
+    
+  }  
+  
+  
+  // eduction section
+  .education {
+    
+    .section-details {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;      
+      
+      strong {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 85%;
+      }
+    }
+  }
+  
+}
