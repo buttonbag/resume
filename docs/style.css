@@ -136,6 +136,11 @@
   font-size: 85%;
 }
 
+@media print {
+  .content .section-title {
+    font-size: 0.8em;
+  }
+}
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
