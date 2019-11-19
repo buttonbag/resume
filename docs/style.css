@@ -137,8 +137,20 @@
 }
 
 @media print {
-  .content .section-title {
-    font-size: 0.8em;
+  .header h1 {
+    font-size: 3em;
+  }
+
+  .header .contact {
+    flex: 0 0 100%;
+  }
+
+  .header .contact .fab {
+    font-size: 100%;
+  }
+
+  .content .section-title, .content .section-details {
+    font-size: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */
