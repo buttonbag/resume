@@ -3,7 +3,7 @@
 notes from Top Resume:
 
 
-Your Resume Critique
+** Your Resume Critique **
 
 Katie Warren <katie@topresume.com> November 19, 2019 to me
 
@@ -35,14 +35,15 @@ Now, let’s put it all together. Here’s a real life example taken from a form
     Passive language / Doing: “Negotiated contracts with vendors”
     Action language / Achieving: “Slashed payroll/benefits administration costs 30% by negotiating pricing and fees, while ensuring the continuation and enhancements of services.”
 
-# A change like this makes a dramatic improvement.
+** A change like this makes a dramatic improvement. **
 
 It may not seem obvious, but a regular review of every word and sentence in your resume is a good idea. Hiring managers are looking for an excuse to eliminate you as a candidate. You may not be able to see awkward phrases and grammatical errors if you've already spent a lot of time with your own resume.
 
-# Digital Readiness
+** Digital Readiness **
 
 Your resume is saved in PDF format. 19% of resumes look like yours. While this may make viewing consistent for recruiters, some older applicant tracking systems (ATS) have problems reading them. If you have the ability, you might consider saving your document in Microsoft Word format for some online submissions.
-Resume Scan Test Results
+
+** Resume Scan Test Results **
 
 93% of all Hiring Managers use resume scanning software called applicant tracking systems (ATS) to filter candidates from the application pool. To illustrate how you stand up to the automation, I passed your resume through the very same software that Hiring Managers use to filter the real talent from the hundreds, sometimes thousands, of candidates that apply for a single open position. 
 
