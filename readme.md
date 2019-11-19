@@ -3,7 +3,7 @@
 notes from Top Resume:
 
 
-** Your Resume Critique **
+__ Your Resume Critique __
 
 Katie Warren <katie@topresume.com> November 19, 2019 to me
 
