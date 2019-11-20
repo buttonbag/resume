@@ -138,6 +138,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90vw;
+  }
+}
+
 // @media print {
 //   .header h1 {
 //     font-size: 3em;
