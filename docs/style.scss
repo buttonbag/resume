@@ -32,10 +32,12 @@
   justify-content: space-between;
   flex: 0 0 30%;
   align-items: center;
+  line-height: 3;
 }
 .header .contact a {
   color: #333;
   text-decoration: none;
+  padding: 0 5px;
 }
 .header .contact a:visited {
   color: #333;
@@ -117,7 +119,10 @@
   font-size: 85%;
 }
 
-@media print {
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 80vw;
+  }
   .header h1 {
     font-size: 3em;
   }
@@ -129,8 +134,24 @@
   }
 
   .content .section-title, .content .section-details {
-    font-size: 80%;
+    font-size: 80%;  
   }
 }
+
+// @media print {
+//   .header h1 {
+//     font-size: 3em;
+//   }
+//   .header .contact {
+//     flex: 0 0 100%;
+//   }
+//   .header .contact .fab {
+//     font-size: 100%;
+//   }
+
+//   .content .section-title, .content .section-details {
+//     font-size: 80%;
+//   }
+// }
 
 /*# sourceMappingURL=style.css.map */
