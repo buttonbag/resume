@@ -36,22 +36,27 @@
     align-items: center;
     line-height: 3;
     font-size: .8rem;
+
+    * {
+      flex: 1 1 auto; //centers orphan items
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+      padding: 0 5px;
+    }
+
+    a:visited {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .fab {
+      font-size: 150%;
+    }
   }
 
-  .contact a {
-    color: #333;
-    text-decoration: none;
-    padding: 0 5px;
-  }
-
-  .contact a:visited {
-    color: #333;
-    text-decoration: none;
-  }
-
-  .contact .fab {
-    font-size: 150%;
-  }
 }
 
 .content {
