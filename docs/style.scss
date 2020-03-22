@@ -69,12 +69,12 @@
     border-bottom: none;
   }
 
-  .profile, .skills, .work, .education {
+  .profile, .skills, .work, .edu {
     display: flex;
     justify-content: flex-start;
     border-bottom: 1px solid #e3e3e3;
   }
-  .profile:last-child, .skills:last-child, .work:last-child, .education:last-child {
+  .profile:last-child, .skills:last-child, .work:last-child, .edu:last-child {
     border-bottom: none;
   }
   .skills-list {
@@ -97,36 +97,36 @@
     padding: 15px;
     flex-basis: 80vw;
   }
-  .work-card .work-header {
+  .work-card .work-header, .edu-card .edu-header {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 85%;
   }
-  .work-card .work-header div {
+  .work-card .work-header div, .edu-card .edu-header div {
     /* .position, .name, .year  */
     display: flex;
     flex: 1 1 33%;
   }
-  .work-card .work-header .name {
+  .work-card .work-header .name, .edu-card .edu-header .name {
     justify-content: center;
   }
-  .work-card .work-header :last-child {
+  .work-card .work-header :last-child, .edu-card .edu-header :last-child {
     justify-content: flex-end;
   }
-  .work-card .work-description {
+  .work-card .work-description, .edu-card .edu-description {
     padding: 15px 0 50px;
   }
-  .work-card:last-child .work-description {
+  .work-card:last-child .work-description, .edu-card:last-child .edu-description {
     padding: 15px 0;
   }
-  .education .section-details {
+  .edu .section-details {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
   }
-  .education .section-details strong {
+  .edu .section-details strong {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 85%;
@@ -175,7 +175,7 @@
     }
   }
   .content {
-    .profile, .skills, .work, .education {
+    .profile, .skills, .work, .edu {
       flex-wrap: wrap;
     }
     .section-title {
@@ -202,7 +202,7 @@
     font-size: 70%;
     line-height: 1.2;
   }
-    .content .work-card .work-description {
+    .content .work-card .work-description, .content .edu-card .edu-description {
     padding: 15px 0;
   }
 }
