@@ -107,7 +107,7 @@
   .work-card .work-header div, .edu-card .edu-header div {
     /* .position, .name, .year  */
     display: flex;
-    flex: 1 1 33%;
+    flex: 0 0 33%;
   }
   .work-card .work-header .name, .edu-card .edu-header .name {
     justify-content: center;
