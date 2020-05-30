@@ -1,3 +1,9 @@
+:root {
+  --accent-color: #156f99;
+  --border-color: #e3e3e3;
+  --link-color: #333;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -16,13 +22,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid var(--border-color);
   padding: 15px;
   color: #8a8a8a;
   font-size: 1em;
 
   h1 {
-    color: #156f99;
+    color: var(--accent-color);
     font-size: 4em;
     flex: 1 1 70%;
   }
@@ -42,13 +48,13 @@
     }
 
     a {
-      color: #333;
+      color: var(--link-color);
       text-decoration: none;
       padding: 0 5px;
     }
 
     a:visited {
-      color: #333;
+      color: var(--link-color);
       text-decoration: none;
     }
 
@@ -72,10 +78,10 @@
   .profile, .skills, .work, .edu {
     display: flex;
     justify-content: flex-start;
-    border-bottom: 1px solid #e3e3e3;
-  }
-  .profile:last-child, .skills:last-child, .work:last-child, .edu:last-child {
-    border-bottom: none;
+    border-bottom: 1px solid var(--border-color);
+    &:last-child{
+      border-bottom: none;
+    }
   }
   .skills-list {
     column-count: 3;
@@ -85,10 +91,10 @@
   }
   .section-title {
     width: 15vw;
-    color: #156f99;
+    color: var(--accent-color);
     font-size: 1em;
     font-weight: bold;
-    border-right: 1px solid #e3e3e3;
+    border-right: 1px solid var(--border-color);
     flex-basis: 20vw;
     padding: 15px 0;
     text-transform: uppercase;
@@ -97,29 +103,37 @@
     padding: 15px;
     flex-basis: 80vw;
   }
-  .work-card .work-header, .edu-card .edu-header {
+  .work-card, .edu-card {
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 0 25px;
+    
+    .work-header, .edu-header {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 85%;
-  }
-  .work-card .work-header div, .edu-card .edu-header div {
-    /* .position, .name, .year  */
-    display: flex;
-    flex: 1 1 33%;
-  }
-  .work-card .work-header .name, .edu-card .edu-header .name {
-    justify-content: center;
-  }
-  .work-card .work-header :last-child, .edu-card .edu-header :last-child {
-    justify-content: flex-end;
-  }
-  .work-card .work-description, .edu-card .edu-description {
-    padding: 15px 0 50px;
-  }
-  .work-card:last-child .work-description, .edu-card:last-child .edu-description {
-    padding: 15px 0;
+      div {
+        /* .position, .name, .year  */
+        display: flex;
+        flex: 1 1 33%;
+      }
+      .name {
+        justify-content: center;
+      }
+      .year {
+        justify-content: flex-end;
+      }
+    }
+    .work-description, .edu-description {
+      padding-top: 15px;
+    }
+    &:first-child {
+      padding-top: 0;;
+    }
+    &:last-child {
+      border: 0;
+    }
   }
   .edu .section-details {
     display: flex;

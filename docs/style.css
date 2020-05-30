@@ -1,3 +1,9 @@
+:root {
+  --accent-color: #156f99;
+  --border-color: #e3e3e3;
+  --link-color: #333;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -16,13 +22,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid var(--border-color);
   padding: 15px;
   color: #8a8a8a;
   font-size: 1em;
 }
 .header h1 {
-  color: #156f99;
+  color: var(--accent-color);
   font-size: 4em;
   flex: 1 1 70%;
 }
@@ -40,12 +46,12 @@
   flex: 1 1 auto;
 }
 .header .contact a {
-  color: #333;
+  color: var(--link-color);
   text-decoration: none;
   padding: 0 5px;
 }
 .header .contact a:visited {
-  color: #333;
+  color: var(--link-color);
   text-decoration: none;
 }
 .header .contact .fab {
@@ -64,7 +70,7 @@
 .content .profile, .content .skills, .content .work, .content .edu {
   display: flex;
   justify-content: flex-start;
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid var(--border-color);
 }
 .content .profile:last-child, .content .skills:last-child, .content .work:last-child, .content .edu:last-child {
   border-bottom: none;
@@ -77,10 +83,10 @@
 }
 .content .section-title {
   width: 15vw;
-  color: #156f99;
+  color: var(--accent-color);
   font-size: 1em;
   font-weight: bold;
-  border-right: 1px solid #e3e3e3;
+  border-right: 1px solid var(--border-color);
   flex-basis: 20vw;
   padding: 15px 0;
   text-transform: uppercase;
@@ -89,29 +95,36 @@
   padding: 15px;
   flex-basis: 80vw;
 }
-.content .work-card .work-header, .content .edu-card .edu-header {
+.content .work-card, .content .edu-card {
+  border-bottom: 1px solid var(--border-color);
+  padding: 10px 0 25px;
+}
+.content .work-card .work-header, .content .work-card .edu-header, .content .edu-card .work-header, .content .edu-card .edu-header {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 85%;
 }
-.content .work-card .work-header div, .content .edu-card .edu-header div {
+.content .work-card .work-header div, .content .work-card .edu-header div, .content .edu-card .work-header div, .content .edu-card .edu-header div {
   /* .position, .name, .year  */
   display: flex;
   flex: 1 1 33%;
 }
-.content .work-card .work-header .name, .content .edu-card .edu-header .name {
+.content .work-card .work-header .name, .content .work-card .edu-header .name, .content .edu-card .work-header .name, .content .edu-card .edu-header .name {
   justify-content: center;
 }
-.content .work-card .work-header :last-child, .content .edu-card .edu-header :last-child {
+.content .work-card .work-header .year, .content .work-card .edu-header .year, .content .edu-card .work-header .year, .content .edu-card .edu-header .year {
   justify-content: flex-end;
 }
-.content .work-card .work-description, .content .edu-card .edu-description {
-  padding: 15px 0 50px;
+.content .work-card .work-description, .content .work-card .edu-description, .content .edu-card .work-description, .content .edu-card .edu-description {
+  padding-top: 15px;
 }
-.content .work-card:last-child .work-description, .content .edu-card:last-child .edu-description {
-  padding: 15px 0;
+.content .work-card:first-child, .content .edu-card:first-child {
+  padding-top: 0;
+}
+.content .work-card:last-child, .content .edu-card:last-child {
+  border: 0;
 }
 .content .edu .section-details {
   display: flex;
