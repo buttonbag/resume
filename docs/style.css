@@ -125,6 +125,7 @@
 }
 .content .work-card:last-child, .content .edu-card:last-child {
   border: 0;
+  padding: 10px 0 0;
 }
 .content .edu .section-details {
   display: flex;
