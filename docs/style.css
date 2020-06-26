@@ -99,7 +99,7 @@
 .content .work-card .work-header div, .content .edu-card .edu-header div {
   /* .position, .name, .year  */
   display: flex;
-  flex: 1 1 33%;
+  flex: 0 0 33%;
 }
 .content .work-card .work-header .name, .content .edu-card .edu-header .name {
   justify-content: center;
