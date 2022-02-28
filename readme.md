@@ -1,13 +1,10 @@
-* resume built from previous 2018 version. The goal is to have a more succint, easy to read resume. 
+- resume built from previous 2018 version. The goal is to have a more succint, easy to read resume.
 
 notes from Top Resume:
 
+** Your Resume Critique **
 
-__ Your Resume Critique __
-
-Katie Warren <katie@topresume.com> November 19, 2019 to me
-
-Hi Louie,
+Katie Warren November 19, 2019 to me
 
 This free resume evaluation is intended to give you an honest, straightforward assessment with some suggestions to help in your job search. I personally review hundreds of resumes each month so I'm able to provide insight into how you compare to other job seekers competing for the same positions.
 Visual Presentation and Organization
@@ -45,6 +42,4 @@ Your resume is saved in PDF format. 19% of resumes look like yours. While this m
 
 ** Resume Scan Test Results **
 
-93% of all Hiring Managers use resume scanning software called applicant tracking systems (ATS) to filter candidates from the application pool. To illustrate how you stand up to the automation, I passed your resume through the very same software that Hiring Managers use to filter the real talent from the hundreds, sometimes thousands, of candidates that apply for a single open position. 
-
-
+93% of all Hiring Managers use resume scanning software called applicant tracking systems (ATS) to filter candidates from the application pool. To illustrate how you stand up to the automation, I passed your resume through the very same software that Hiring Managers use to filter the real talent from the hundreds, sometimes thousands, of candidates that apply for a single open position.
