@@ -6,11 +6,11 @@ export default function Education() {
         return (
             <div className="edu-card" key={i}>
                 <div className="edu-header">
-                    <div className="position">{edu.position}</div>
-                    <div className="name">{edu.name}</div>
-                    <div className="year">{edu.year}</div>
+                    <div className="edu--name">{edu.name}</div>
+                    <div className="edu--type">{edu.type}</div>
+                    <div className="edu--year">{edu.year}</div>
                 </div>
-                <div className="edu-description">
+                <div className="edu--description">
                     {edu.description}
                 </div>
             </div>

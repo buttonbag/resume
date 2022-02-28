@@ -1,8 +1,10 @@
 import skillsData from "../data/skillsData"
-export default function Skills(props) {
-    const skills = skillsData.map((skill, i) => (
-        <li key={i}>{skill}</li>
-    ))
+export default function Skills() {
+    const skills = skillsData.map((skill, i) => {
+        return (
+            <li key={i}>{skill}</li>
+        );
+    })
     return (
         <div className="skills">
             <div className="section-title">superpowers</div>

@@ -9,7 +9,7 @@
 }
 
 .container {
-	width: 65vw;
+	width: 50vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -112,25 +112,19 @@
 
 		.work-header,
 		.edu-header {
-			display: flex;
-			justify-content: space-between;
+			// display: flex;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			// justify-content: space-between;
 			font-weight: bold;
 			text-transform: uppercase;
 			font-size: 85%;
-			div {
-				/* .position, .name, .year  */
-				display: flex;
-				flex: 1 1 33%;
-			}
-			.name {
-				justify-content: center;
-			}
-			.year {
-				justify-content: flex-end;
+			div:last-child {
+				justify-self: end;
 			}
 		}
-		.work-description,
-		.edu-description {
+		.work--description,
+		.edu--description {
 			padding-top: 15px;
 		}
 		&:first-child {

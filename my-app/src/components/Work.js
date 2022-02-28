@@ -5,11 +5,11 @@ export default function Works() {
 		return (
 			<div className="work-card" key={i}>
 				<div className="work-header">
-					<div className="position">{work.position}</div>
-					<div className="name">{work.name}</div>
-					<div className="year">{work.year}</div>
+					<div className="work--position">{work.position}</div>
+					<div className="work--name">{work.name}</div>
+					<div className="work--year">{work.year}</div>
 				</div>
-				<div className="work-description">{work.description}</div>
+				<div className="work--description">{work.description}</div>
 			</div>
 		);
 	});

@@ -9,7 +9,7 @@
 }
 
 .container {
-  width: 65vw;
+  width: 50vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,36 +110,22 @@
 .content .work-card .edu-header,
 .content .edu-card .work-header,
 .content .edu-card .edu-header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 85%;
 }
-.content .work-card .work-header div,
-.content .work-card .edu-header div,
-.content .edu-card .work-header div,
-.content .edu-card .edu-header div {
-  /* .position, .name, .year  */
-  display: flex;
-  flex: 1 1 33%;
+.content .work-card .work-header div:last-child,
+.content .work-card .edu-header div:last-child,
+.content .edu-card .work-header div:last-child,
+.content .edu-card .edu-header div:last-child {
+  justify-self: end;
 }
-.content .work-card .work-header .name,
-.content .work-card .edu-header .name,
-.content .edu-card .work-header .name,
-.content .edu-card .edu-header .name {
-  justify-content: center;
-}
-.content .work-card .work-header .year,
-.content .work-card .edu-header .year,
-.content .edu-card .work-header .year,
-.content .edu-card .edu-header .year {
-  justify-content: flex-end;
-}
-.content .work-card .work-description,
-.content .work-card .edu-description,
-.content .edu-card .work-description,
-.content .edu-card .edu-description {
+.content .work-card .work--description,
+.content .work-card .edu--description,
+.content .edu-card .work--description,
+.content .edu-card .edu--description {
   padding-top: 15px;
 }
 .content .work-card:first-child,
