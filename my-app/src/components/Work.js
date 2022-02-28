@@ -1,9 +1,9 @@
 import workData from '../data/workData';
 
 export default function Works() {
-	const workArray = workData.map((work) => {
+	const workArray = workData.map((work, i) => {
 		return (
-			<div className="work-card">
+			<div className="work-card" key={i}>
 				<div className="work-header">
 					<div className="position">{work.position}</div>
 					<div className="name">{work.name}</div>
