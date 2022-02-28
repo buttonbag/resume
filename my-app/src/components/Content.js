@@ -1,3 +1,4 @@
+import Skills from "./Skills";
 import Works from "./Work";
 
 export default function Content() {
@@ -9,24 +10,7 @@ export default function Content() {
                 <div class="section-details">Detail oriented Front End Developer and designer with a passion for learning new web technologies guided by my natural curiosity of all things web. Possesses a track record of creating fully functioning websites and ads from design phase all the way to production stage. Passionate about learning and implementing new technologies and a regular participant of local web developer meetups.</div>
             </div>
             {/* <!-- skills --> */}
-            <div class="skills">
-                <div class="section-title">superpowers</div>
-                <div class="section-details">
-                    <ul class="skills-list">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>jQuery</li>
-                        <li>GSAP</li>
-                        <li>Sublime Text</li>
-                        <li>Git</li>
-                        <li>Photoshop</li>
-                        <li>Illustrator</li>
-                        <li>Animate</li>
-                        <li>After Effects</li>
-                        <li>InDesign</li>
-                    </ul>
-                </div>
-            </div>
+            <Skills />
             {/* <!-- work experience --> */}
             <Works />
             {/* <!-- education --> */}
