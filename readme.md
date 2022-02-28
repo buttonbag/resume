@@ -1,4 +1,11 @@
-- resume built from previous 2018 version. The goal is to have a more succint, easy to read resume.
+## new ideas for react version
+
+- add darkmode toggle
+- light redesign
+- add new interaction components for digital
+-
+
+## resume built from previous 2018 version. The goal is to have a more succint, easy to read resume.
 
 notes from Top Resume:
 
