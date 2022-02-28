@@ -16,7 +16,7 @@ export default function Header() {
                     <a href="https://twitter.com/iambuttonbag"><i className="fab fa-twitter"></i></a>
                 </span>
                 <a href="mailto:louiecamacho@gmail.com">louieCamacho@gmail.com</a>
-                <span>773.952.0534</span>
+                <span>872.221.2819</span>
             </div>{/* <!-- /contact info --> */}
         </div>
     )
